@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Name</title>
+</head>
+<body>
+    <!--- search item-->
+    <div>
+        <div>
+            <h2>{{search_input}}</h2>    
+            <h3>{{ search_input_description }}</h3>
+        </div>
+        <div>
+            <button class="save">Save</button>
+        </div>
+    </div>
+<!--- related search results-->
+    <div>
+        <div class="related">
+            <p>{{ related_item_1 }} </p>
+        </div>
+        <div class="related">
+            <p>{{ related_item_2 }} </p>
+        </div>
+        <div class="related">
+            <p>{{ related_item_3 }} </p>
+        </div>
+    </div>
+    <div class="genres">
+        <p>{{ genres }}</p>
+    </div>
+</body>
+</html>
