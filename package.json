@@ -1,5 +1,7 @@
 {
   "dependencies": {
+ feature/views
+    "handlebars": "^4.7.7"
     "bcrypt": "^5.0.1",
     "connect-session-sequelize": "^7.1.4",
     "dotenv": "^16.0.1",
@@ -11,5 +13,6 @@
   },
   "scripts": {
     "seeds": "node seeds/index.js"
+ main
   }
 }
