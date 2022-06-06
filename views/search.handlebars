@@ -2,20 +2,13 @@
     {{!-- {{#if loggedIn}} --}}
     <section>
         <h2>Search for a song</h2>
-    <div class="search-box">
-        <input type="text" placeholder="Type to search...">
-        <div class="search-icon">
-            <i class="fa fa-search" aria-hidden="true"></i>
-
-            <a href="search-results.handlebars"></a>
+        <div class="search-box">
+            <input type="text" placeholder="Type to search..." id="song-name">
+            <button id="search-button">Search</button>    
+            <div id="search-data">
+            </div>
         </div>
-    <div class="cancel-icon">
-        <i class="fas fa-times"></i>
-    </div>    
-    <div class="search-data">
-    </div>
-    </div>
     </section>
-    <script src="/javascript/search.js"></script>
+    <script src="/javascript/generate-artists.js"></script>
     {{!-- {{/if}} --}}
 </body>
