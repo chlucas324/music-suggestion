@@ -1,7 +1,24 @@
 {
+  "name": "music-suggestion",
+  "description": "",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "seeds": "node seeds/index.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chlucas324/music-suggestion.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chlucas324/music-suggestion/issues"
+  },
+  "homepage": "https://github.com/chlucas324/music-suggestion#readme",
   "dependencies": {
- feature/views
-    "handlebars": "^4.7.7"
+    "handlebars": "^4.7.7",
     "bcrypt": "^5.0.1",
     "connect-session-sequelize": "^7.1.4",
     "dotenv": "^16.0.1",
@@ -11,8 +28,5 @@
     "mysql2": "^2.3.3",
     "sequelize": "^6.20.1"
   },
-  "scripts": {
-    "seeds": "node seeds/index.js"
- main
-  }
+  "devDependencies": {}
 }
