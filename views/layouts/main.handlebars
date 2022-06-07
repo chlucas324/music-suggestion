@@ -13,13 +13,16 @@
   <header>
     <h1>
       <a href="/">Music</a>
+      {{#if loggedIn}}
+        <button type="submit">Logout</button>
+      {{/if}}
     </h1>
   </header>
   <main>
     {{{ body }}}
   </main>
   <footer>
-
+    foot 
   </footer>
 </body>
 </html>
