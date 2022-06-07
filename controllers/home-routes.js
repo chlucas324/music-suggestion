@@ -13,21 +13,35 @@ router.get('/', (req, res) => {
   });
 
 router.get('/search', (req, res) => {
-  res.render('search');
+  // if (!req.session.loggedIn) {
+  //   res.redirect('/');
+  //   return;
+  // }
+  res.render('search', {
+    loggedIn: req.session.loggedIn
+  });
 });
 
 //After Searching, it should redirect to this page
   router.get('/search-results', (req, res) => {
-    if (req.session.loggedIn) {
-      res.redirect('/');
-      return;
-    }
+    // if (!req.session.loggedIn) {
+    //   res.redirect('/');
+    //   return;
+    // }
   
-    res.render('search-results');
+    res.render('search-results', {
+      loggedIn: req.session.loggedIn
+    });
   });
 
   router.get('/playlist', (req, res) => {
-    res.render('playlist');
+    // if (!req.session.loggedIn) {
+    //   res.redirect('/');
+    //   return;
+    // }
+    res.render('playlist', {
+      loggedIn: req.session.loggedIn
+    });
   });
 
 module.exports = router;
