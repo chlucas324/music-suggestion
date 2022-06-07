@@ -13,11 +13,12 @@ async function loginFormHandler(event) {
           email,
           password
         }),
+       
         headers: { 'Content-Type': 'application/json' }
       });
-  
+      console.log('hello')
       if (response.ok) {
-        document.location.replace('/');
+        document.location.replace('/search');
       } else {
         alert(response.statusText);
       }
