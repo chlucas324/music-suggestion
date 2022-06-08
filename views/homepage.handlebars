@@ -1,43 +1,53 @@
 <body>
-  <div class="wrapper">
+  <div class="container">
     <main>
-      <div>
-        <div>
+      <div class="row justify-content-around">
+
+  <!-- website description-->  
+        <div class="col">
           <h2>Description</h2>
         </div>
-        <div>
+        
+        <!-- login form--> 
+        <div class="form">
+        <div class="col login-form">
           <form class="login-form">
-            <div>
-              <label for="email-login">email:</label>
+            <div class="login-form">
+              <label for="email-login">Email:</label>
               <input type="text" id="email-login" />
             </div>
-            <div>
-              <label for="password-login">password:</label>
+            <div class="login-form">
+              <label for="password-login">Password:</label>
               <input type="password" id="password-login" />
             </div>
-            <div>
-              <button type="submit">login</button>
+            <div class="login-form">
+              <button type="submit">Login</button>
             </div>
           </form>
 
+<!--sign up form--> 
+
           <form class="signup-form">
-            <div>
-              <label for="username-signup">username:</label>
+            <div class="col">
+            <div class="signup-form">
+              <label for="username-signup">Username:</label>
               <input type="text" id="username-signup" />
             </div>
-            <div>
-              <label for="email-signup">email:</label>
+            <div class="signup-form">
+              <label for="email-signup">Email:</label>
               <input type="text" id="email-signup" />
             </div>
-            <div>
-              <label for="password-signup">password:</label>
+            <div class="signup-form">
+              <label for="password-signup">Password:</label>
               <input type="password" id="password-signup" />
             </div>
-            <div>
-              <button type="submit">signup</button>
+            <div class="signup-form">
+              <button type="submit">Signup</button>
+            </div>
             </div>
           </form>
         </div>
+      </div>
       </div>
     </main>
   </div>
