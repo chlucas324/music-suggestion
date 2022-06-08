@@ -6,7 +6,7 @@ var optionGet = {
 	method: 'GET',
 	headers: {
 		'X-RapidAPI-Host': 'shazam.p.rapidapi.com',
-		'X-RapidAPI-Key': 'acee90adcamshab5587e0a971503p1fb99djsn843173898727'
+		'X-RapidAPI-Key': 'acee90adcamshab5587e0a971503p1fb99djsn843173898727',
 	}
 };
 
@@ -43,7 +43,7 @@ const generateArtists = (artists) => {
   
   for (let i = 0; i < artists.length; i++) {    
     let artist = artists[i]
-    let artistHTML = '<a href="/search-results?song-name=' + songNameEl.value.trim() + '&index=' + i + '" id="artist-link-' + i + '">Artist: ' + artist + ' </a>'
+    let artistHTML = '<li><a href="/search-results?song-name=' + songNameEl.value.trim() + '&index=' + i + '" id="artist-link-' + i + '">Artist: ' + artist + ' </a></li>'
 
     artistList.push(artistHTML);
   }

@@ -9,7 +9,7 @@ var optionGet = {
 	method: 'GET',
 	headers: {
 		'X-RapidAPI-Host': 'shazam.p.rapidapi.com',
-		'X-RapidAPI-Key': 'acee90adcamshab5587e0a971503p1fb99djsn843173898727'
+		"X-RapidAPI-Key": 'acee90adcamshab5587e0a971503p1fb99djsn843173898727',
 	}
 };
 
