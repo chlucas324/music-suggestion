@@ -2,14 +2,14 @@
 <body>
   {{#if loggedIn}}
 
-  <div class="playlist">
+    <div class="playlist">
       <h2>Playlist</h2>
       {{#each song-name}}
-      <p>{{song-name}}</p>
-      <p>{{artist-name}}</p>
-      <a href="/search-results?{{song-url}}">Check out the song here!</a>
+        <p>{{{song-name}}}</p>
+        <p>{{{artist-name}}}</p>
+        <a href="/search-results?{{{song-url}}}">Check out the song here!</a>
       {{/each}}
-  </div>  
-  
+    </div>
+
   {{/if}}
 </body>
