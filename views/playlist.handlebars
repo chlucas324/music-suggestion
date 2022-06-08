@@ -1,15 +1,10 @@
 <!-- playlist from saved results -->
 <body>
   {{#if loggedIn}}
-
-    <div class="playlist">
-      <h2>Playlist</h2>
-      {{#each song-name}}
-        <p>{{song-name}}</p>
-        <p>{{artist-name}}</p>
-        <a href="/search-results?{{song-url}}">Check out the song here!</a>
-      {{/each}}
-    </div>
-
+        <h2>Playlist</h2>
+    {{#each songs as |song|}}
+      {{> playlist-info song}}
+    {{/each}}
   {{/if}}
+  
 </body>

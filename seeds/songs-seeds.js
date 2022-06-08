@@ -6,13 +6,15 @@ const songdata = [
 
     {
         song_name: 'Go',
-        search_url: 'tst.com',
+        artist_name: 'test',
+        search_url: 'song-name=hello&index=0',
         user_id: '1'
       },
 
       {
         song_name: 'Stop',
-        search_url: 'tst.com',
+        artist_name: 'test',
+        search_url: 'song-name=hello&index=0',
         user_id: '2'
       },
 
