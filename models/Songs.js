@@ -14,6 +14,10 @@ Songs.init(
         type: DataTypes.STRING,
         allowNull: false,
       },
+      artist_name: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
       search_url: {
         type: DataTypes.STRING,
         allowNull: false,

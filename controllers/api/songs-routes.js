@@ -29,6 +29,7 @@ router.get('/', (req, res) => {
     if (req.session) {
       Post.create({
         song_name: req.body.song_name,
+        artist_name: req.body.artist_name,
         search_url: req.body.search_url,
         user_id: req.session.user_id
       })
