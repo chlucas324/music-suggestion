@@ -3,8 +3,8 @@ var saveButtonEl = document.querySelector('#save');
 const saveSong = async(event) => {
   event.preventDefault();
 
-  const song_name = document.querySelector('#search-input').value;
-  const artist_name = document.querySelector('#search-input-description').value;
+  const song_name = document.querySelector('#search-input').textContent;
+  const artist_name = document.querySelector('#search-input-description').textContent.split(':')[1].trim();
   const search_url = window.location.search.split('?')[1];
 
   const response = await fetch(`/api/songs`, {

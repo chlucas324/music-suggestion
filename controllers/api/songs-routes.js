@@ -25,9 +25,10 @@ router.get('/', (req, res) => {
   });
 
   router.post('/', (req, res) => {
+    console.log(req.body);
     // expects {song_name: 'My Way', song_name: 'https://taskmaster.com/press', user_id: 1}
     if (req.session) {
-      Post.create({
+      Songs.create({
         song_name: req.body.song_name,
         artist_name: req.body.artist_name,
         search_url: req.body.search_url,
