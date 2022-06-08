@@ -41,9 +41,29 @@ router.get('/search', (req, res) => {
       res.redirect('/');
       return;
     }
-    res.render('playlist', {
-      loggedIn: req.session.loggedIn
-    });
+    else{
+      Songs.findAll({
+      where: {
+          user_id: req.session.user_id
+      },
+      attributes: [
+          'song_name',
+          'search_url',
+          'artist_name',
+      ],
+      })
+      .then(dbUserData => {
+        if (!dbUserData) {
+          res.status(404).json({ message: 'No user found with this id' });
+          return;
+        }
+        const songs = dbUserData.map(song => song.get({ plain: true }))
+        res.render('playlist', {
+          songs,
+          loggedIn: req.session.loggedIn
+        });
+      })
+    }
   });
 
 module.exports = router;
