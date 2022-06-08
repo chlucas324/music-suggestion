@@ -2,4 +2,60 @@
     box-sizing: border-box;
   }
 
+  header {
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    z-index: 9999;
+  }
+
+  header a {
+    text-decoration: none;
+    text-align: center;
+  }
+
+  #email-login, #password-login, #email-signup, #username-signup, #password-signup {
+    border-radius: 6px;
+  }
+
+  .login-form, .signup-form {
+    padding: 10px;
+  }
+
+  form{  
+    text-align: right;
+    font-size: 20px;
+  }
+  input {
+    width: 200px;
+    height: 25px;
+    margin: 2px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .form {
+    margin: 25px;
+  }
+
+  section h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  div.search-box {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+  }
   

@@ -10,12 +10,16 @@
 </head>
 <body>
   <header>
-    <h1>
-      <a href="/">Music</a>
+    <div>
+    <div>
+    <h1><a href="/">Music</a></h1>
       {{#if loggedIn}}
+    </div>  
+    </div>
+      <nav>
         <button type="submit" id="logout">Logout</button>
+      </nav>      
       {{/if}}
-    </h1>
   </header>
   <main>
     {{{ body }}}

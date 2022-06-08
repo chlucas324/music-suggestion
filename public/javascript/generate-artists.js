@@ -1,5 +1,3 @@
-require('dotenv').config()
-
 var songNameEl = document.querySelector('#song-name');
 var searchButtonEl = document.querySelector('#search-button');
 var searchDataEl = document.querySelector('#search-data')
@@ -8,7 +6,7 @@ var optionGet = {
 	method: 'GET',
 	headers: {
 		'X-RapidAPI-Host': 'shazam.p.rapidapi.com',
-		'X-RapidAPI-Key': 'process.env.API_KEY'
+		'X-RapidAPI-Key': 'acee90adcamshab5587e0a971503p1fb99djsn843173898727',
 	}
 };
 
@@ -45,7 +43,7 @@ const generateArtists = (artists) => {
   
   for (let i = 0; i < artists.length; i++) {    
     let artist = artists[i]
-    let artistHTML = '<a href="/search-results?song-name=' + songNameEl.value.trim() + '&index=' + i + '" id="artist-link-' + i + '">Artist: ' + artist + ' </a>'
+    let artistHTML = '<li><a href="/search-results?song-name=' + songNameEl.value.trim() + '&index=' + i + '" id="artist-link-' + i + '">Artist: ' + artist + ' </a></li>'
 
     artistList.push(artistHTML);
   }
