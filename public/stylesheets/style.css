@@ -2,6 +2,11 @@
     box-sizing: border-box;
   }
 
+  /* main handlebars*/ 
+
+  main {
+    margin: 15px 50px;
+  }
   header {
     padding: 20px 35px;
     display: flex;
@@ -17,7 +22,6 @@
 
   header a {
     text-decoration: none;
-    text-align: center;
   }
 
   #email-login, #password-login, #email-signup, #username-signup, #password-signup {
@@ -32,6 +36,7 @@
     text-align: right;
     font-size: 20px;
   }
+
   input {
     width: 200px;
     height: 25px;
@@ -42,7 +47,7 @@
   }
 
   .form {
-    margin: 25px;
+    margin: 25px 50px 25px 50px;
   }
 
   section h2 {
@@ -52,10 +57,65 @@
     text-align: center;
   }
 
+  footer p {
+    text-align: center;
+    font-size: 12px;
+    padding-top: 100px;
+  }
+
+/*nav bar when logged in*/ 
+ nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;  
+    padding: 10px;
+  }
+
+  nav a {
+    padding: 10px;
+    margin: 12px;
+  }
+
+/* search for song page */
   div.search-box {
   margin: auto;
   width: 50%;
   padding: 10px;
   text-align: center;
   }
+  
+  #search-data.container {
+    padding-top: 20px;
+  }
+/*song results page */
+#search-input {
+  text-align: center;  
+  padding: 15px;
+}
+
+#search-input-description {
+  text-align: center;
+}
+
+.save {
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.related, #player {
+  text-align: center;
+  padding: 12px;
+}
+  
+/* playlist page */
+#playlist {
+  text-align: center;
+}
+
+div.playlist {
+  text-align: center;
+  padding: 12px;
+}
   

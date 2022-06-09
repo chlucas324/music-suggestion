@@ -11,12 +11,13 @@
 <body>
   <header>
     <h1>
-      <a href="/">Music</a>
-      <a href="/playlist">Playlist</a>
+      <a href="/">Our Music</a>
+    </h1>
       {{#if loggedIn}}
     </div>  
     </div>
       <nav>
+        <a href="/playlist">Playlist</a>
         <button type="submit" id="logout">Logout</button>
       </nav>      
       {{/if}}
@@ -25,7 +26,7 @@
     {{{ body }}}
   </main>
   <footer>
-    foot  
+    <p>© Copyright, Our Music</p>  
   </footer>
 </body>
 <script src="/javascript/logout.js"></script>
