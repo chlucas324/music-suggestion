@@ -117,5 +117,11 @@
 div.playlist {
   text-align: center;
   padding: 12px;
+  margin: 8px;
+  border-style: groove; 
 }
   
+.song-name {
+  font-style: italic;
+  font-weight: bold;
+}
