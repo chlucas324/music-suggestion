@@ -1,6 +1,10 @@
 var saveButtonEl = document.querySelector("#save");
 
+<<<<<<< Updated upstream
 const saveSong = (event) => {
+=======
+const saveSong = async (event) => {
+>>>>>>> Stashed changes
   event.preventDefault();
 
   const song_name = document.querySelector("#search-input").textContent;
@@ -10,7 +14,11 @@ const saveSong = (event) => {
     .trim();
   const search_url = window.location.search.split("?")[1];
 
+<<<<<<< Updated upstream
   fetch(`/api/songs`, {
+=======
+  const response = await fetch(`/api/songs`, {
+>>>>>>> Stashed changes
     method: "POST",
     body: JSON.stringify({
       song_name,
@@ -20,13 +28,26 @@ const saveSong = (event) => {
     headers: {
       "Content-Type": "application/json",
     },
+<<<<<<< Updated upstream
   }).then((response) => {
     if (response.ok) {
       document.location.replace("/playlist");
     } else {
       alert(response.statusText);
     }
+=======
+>>>>>>> Stashed changes
   });
 };
 
+<<<<<<< Updated upstream
+=======
+  if (response.ok) {
+    document.location.replace("/playlist");
+  } else {
+    alert(response.statusText);
+  }
+};
+
+>>>>>>> Stashed changes
 saveButtonEl.addEventListener("click", saveSong);

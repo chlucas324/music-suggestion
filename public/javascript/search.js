@@ -4,25 +4,29 @@ const cancelBtn = document.querySelector(".cancel-icon");
 const searchInput = document.querySelector("input");
 const searchData = document.querySelector(".search-data");
 
-searchBtn.onclick =()=>{
+searchBtn.onclick = () => {
   searchBox.classList.add("active");
   searchBtn.classList.add("active");
   searchInput.classList.add("active");
   cancelBtn.classList.add("active");
   searchInput.focus();
-  if(searchInput.value != ""){
+  if (searchInput.value != "") {
     var values = searchInput.value;
     searchData.classList.remove("active");
-    searchData.innerHTML = "You just typed " + "<span style='font-weight: 500;'>" + values + "</span>";
-  }else{
+    searchData.innerHTML =
+      "You just typed " +
+      "<span style='font-weight: 500;'>" +
+      values +
+      "</span>";
+  } else {
     searchData.textContent = "";
   }
-}
-cancelBtn.onclick =()=>{
+};
+cancelBtn.onclick = () => {
   searchBox.classList.remove("active");
   searchBtn.classList.remove("active");
   searchInput.classList.remove("active");
   cancelBtn.classList.remove("active");
   searchData.classList.toggle("active");
   searchInput.value = "";
-}
+};
