@@ -29,7 +29,7 @@ To install the project, you can visit this GitHub Repository: [https://github.co
 
 ## Usage
 
-To use this project, please visit this website: [https://music-suggestion-app.herokuapp.com/](https://music-suggestion-app.herokuapp.com/) and make an account to gain access to our Music Suggestions website! The website itself is fairly simplistic, but here's a quick runthrough:
+To use this project, please visit this website: [https://tranquil-retreat-40972.herokuapp.com](https://tranquil-retreat-40972.herokuapp.com) and make an account to gain access to our Music Suggestions website! The website itself is fairly simplistic, but here's a quick runthrough:
 To start out, you'll have to make an account for this website. Once that is done, You will be taken to a "Search" screen where you will look up the name of any song you like. Once you press search, a list of artists will appear below the search bar. Simply click on any of the artists, and you will then be taken to a screen showing the song name, artist name, three related songs, and a link to the Shazam website, where you can listen to the song. On this page, there will also be a save button, which when pressed, will save the current song to a playlist of songs that you want to listen to. You can access the playlist at any time by clicking on the link at the top of the page that says "Playlist."
 
 
