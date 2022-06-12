@@ -2,9 +2,11 @@
 <body>
   {{#if loggedIn}}
         <h2 id="playlist">Playlist</h2>
-    {{#each songs as |song|}}
-      {{> playlist-info song}}
-    {{/each}}
+    {{#if songs}}
+      {{#each songs as |song|}}
+        {{> playlist-info song}}
+      {{/each}}
+    {{/if}}
   {{/if}}
   
 </body>

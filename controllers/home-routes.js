@@ -58,10 +58,18 @@ router.get('/search', (req, res) => {
           return;
         }
         const songs = dbUserData.map(song => song.get({ plain: true }))
-        res.render('playlist', {
-          songs,
-          loggedIn: req.session.loggedIn
-        });
+        if(songs[0] === undefined){
+          res.render('playlist', {
+            loggedIn: req.session.loggedIn
+          });
+        }
+        else{
+          res.render('playlist', {
+            songs,
+            loggedIn: req.session.loggedIn
+          });
+        }
+        
       })
     }
   });
