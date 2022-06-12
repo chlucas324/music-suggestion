@@ -34,7 +34,6 @@ router.get("/search-results", (req, res) => {
 });
 
 router.get("/playlist", (req, res) => {
-  
   if (!req.session.loggedIn) {
     res.redirect("/");
     return;
@@ -43,35 +42,6 @@ router.get("/playlist", (req, res) => {
       where: {
         user_id: req.session.user_id,
       },
-<<<<<<< Updated upstream
-      attributes: [
-          'song_name',
-          'search_url',
-          'artist_name',
-      ],
-      })
-      .then(dbUserData => {
-        if (!dbUserData) {
-          res.status(404).json({ message: 'No user found with this id' });
-          return;
-        }
-        const songs = dbUserData.map(song => song.get({ plain: true }))
-        if(songs[0] === undefined){
-          res.render('playlist', {
-            loggedIn: req.session.loggedIn
-          });
-        }
-        else{
-          res.render('playlist', {
-            songs,
-            loggedIn: req.session.loggedIn
-          });
-        }
-        
-      })
-    }
-  });
-=======
       attributes: ["song_name", "search_url", "artist_name"],
     }).then((dbUserData) => {
       if (!dbUserData) {
@@ -79,13 +49,18 @@ router.get("/playlist", (req, res) => {
         return;
       }
       const songs = dbUserData.map((song) => song.get({ plain: true }));
-      res.render("playlist", {
-        songs,
-        loggedIn: req.session.loggedIn,
-      });
+      if (songs[0] === undefined) {
+        res.render("playlist", {
+          loggedIn: req.session.loggedIn,
+        });
+      } else {
+        res.render("playlist", {
+          songs,
+          loggedIn: req.session.loggedIn,
+        });
+      }
     });
   }
 });
->>>>>>> Stashed changes
 
 module.exports = router;
