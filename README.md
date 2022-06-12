@@ -19,9 +19,9 @@
 
 ## Description
 
-For this project, we wanted to make a website where users could explore and develop their musical tastes, while being able to save new songs they find along the way.
+For this project, we wanted to make a website where users could explore and develop their musical tastes, while being able to save new songs they find along the way. 
 
-  
+<img width="1440" alt="Screen Shot 2022-06-12 at 12 34 13 PM" src="https://user-images.githubusercontent.com/98677851/173243940-fd871898-66af-4320-ad4f-56cfc6bb9d44.png">  
 ## Installation
 
 To install the project, you can visit this GitHub Repository: [https://github.com/chlucas324/music-suggestion](https://github.com/chlucas324/music-suggestion) and either clone the repository or download it as a zip file.
